@@ -22,6 +22,7 @@
   "dependencies": {
     "@textile/hub": "^0.3.3",
     "@textile/threads-core": "^0.1.30",
+    "@textile/threads-database": "^0.6.1",
     "babel-node": "^0.0.1-security",
     "dotenv": "^8.2.0"
   },
