@@ -1,7 +1,7 @@
 {
   "name": "hub-demo",
   "version": "1.0.0",
-  "main": "main.ts",
+  "main": "index.ts",
   "license": "MIT",
   "scripts": {
     "start": "babel-node . --extensions '.ts'"
