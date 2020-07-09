@@ -14,7 +14,7 @@ const init = (keyInfo: KeyInfo, threadID: ThreadID) => {
 
 const startThread = async (db: Database, threadID: ThreadID, identity: Identity) => {
     await db.start(identity, { threadID: threadID })
-    return threadID
+    return db.threadID
 }
 
 interface Message {
