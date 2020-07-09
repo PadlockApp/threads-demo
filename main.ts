@@ -1,3 +1,4 @@
+;(global as any).WebSocket = require('isomorphic-ws')
 import { KeyInfo, ThreadID, Identity } from '@textile/hub'
 import { Database } from "@textile/threads-database"
 import { Libp2pCryptoIdentity } from '@textile/threads-core'
@@ -27,8 +28,7 @@ const example = async () => {
     const threadID = ThreadID.fromString('bafkr5u42tlm553spyrchiu6g44hzxi2l6bzmsl3wiibn5r7vlq3ccvq')
     const db = await init(keyInfo, threadID)
     const identity = await Libp2pCryptoIdentity.fromRandom()
-    const thread = await startThread(db, threadID, identity)
+    const thread = await startThread(db, db.threadID, identity)
 }
-
 
 example()
